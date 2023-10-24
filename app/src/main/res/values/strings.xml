@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MediAlert</string>
+    <string name="slogan">Your Personal Medication Assistant</string>
+    <string name="splash_logo"></string>
+</resources>
