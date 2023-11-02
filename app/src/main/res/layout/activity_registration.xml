@@ -60,7 +60,7 @@
             tools:layout_editor_absoluteY="468dp" />
 
         <TextView
-            android:id="@+id/registerNow"
+            android:id="@+id/loginNow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
