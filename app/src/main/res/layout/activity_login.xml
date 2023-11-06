@@ -18,8 +18,8 @@
         android:text="@string/login"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="189dp" />
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="161dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -37,16 +37,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/password"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="392dp" />
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="401dp" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/email"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="322dp" />
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="328dp" />
+
     <ProgressBar
         android:id="@+id/progressBar"
         android:visibility="gone"
@@ -58,8 +59,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="468dp" />
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="515dp" />
 
     <TextView
         android:id="@+id/registerNow"
