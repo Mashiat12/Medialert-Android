@@ -37,7 +37,7 @@ public class SplashScreen extends AppCompatActivity {
         splashLogo.setAnimation(topAnim);
         Slogan.setAnimation(bottomAnim);
 
-        Intent i = new Intent(SplashScreen.this, MainActivity.class);
+        Intent i = new Intent(SplashScreen.this, HomeActivity.class);
 
         new Handler().postDelayed(new Runnable() {
             @Override
