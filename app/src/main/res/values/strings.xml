@@ -1,12 +1,10 @@
 <resources>
-    <string name="app_name">MediAlert</string>
-    <string name="slogan">Your Personal Medication Assistant</string>
-    <string name="splash_logo"></string>
-    <string name="login">Login</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="click_to_register">click to register</string>
-    <string name="registration">Registration</string>
-    <string name="click_to_login">Click here to login</string>
-
+    <string name='app_name'>MediaAlert</string>
+    <string name='slogan'>Your Personal Medication Assistant</string>
+    <string name='login'>Login</string>
+    <string name='email'>Email</string>
+    <string name='password'>Password</string>
+    <string name='click_to_register'>click to register</string>
+    <string name='registration'>Registration</string>
+    <string name='click_to_login'>Click here to login</string>
 </resources>

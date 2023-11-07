@@ -2,9 +2,11 @@ package com.example.medialert;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -12,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.File;
+
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -37,12 +40,16 @@ public class SplashScreen extends AppCompatActivity {
         splashLogo.setAnimation(topAnim);
         Slogan.setAnimation(bottomAnim);
 
-        Intent i = new Intent(SplashScreen.this, HomeActivity.class);
+
+
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                 startActivity(i);
-                finish(); } },4000);
+                final Intent mainIntent = new Intent(SplashScreen.this, Login.class);
+                SplashScreen.this.startActivity(mainIntent);
+                SplashScreen.this.finish();
+            }
+        }, 5000);
     }
     }

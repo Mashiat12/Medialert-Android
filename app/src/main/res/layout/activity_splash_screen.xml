@@ -16,7 +16,7 @@
         android:layout_centerInParent="true"
         android:scaleType="centerCrop"
         android:src="@drawable/logo" />
-        <!--android:contentDescription="@string/app_logo_description" />-->
+
     <TextView
         android:id="@+id/slogan"
         android:layout_width="393dp"
