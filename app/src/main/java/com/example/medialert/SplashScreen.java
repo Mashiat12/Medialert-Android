@@ -10,6 +10,10 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import java.io.File;
 
 public class SplashScreen extends AppCompatActivity {
@@ -17,6 +21,11 @@ public class SplashScreen extends AppCompatActivity {
     ImageView splashLogo;
     TextView Slogan;
     Animation topAnim,bottomAnim;
+
+
+    private FirebaseAuth mAuth ;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +40,30 @@ public class SplashScreen extends AppCompatActivity {
         //set animation
         splashLogo.setAnimation(topAnim);
         Slogan.setAnimation(bottomAnim);
+
+        // Initialize Firebase Auth
+        mAuth = FirebaseAuth.getInstance();
+
+
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                final Intent mainIntent = new Intent(SplashScreen.this, Login.class);
-                SplashScreen.this.startActivity(mainIntent);
-                SplashScreen.this.finish();
+
+                    Log.d("myTag", "This is from splash screen");
+
+
+                FirebaseUser currentUser = mAuth.getCurrentUser();
+                if(currentUser != null){
+                    Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
+                }else {
+                    Intent intent = new Intent(SplashScreen.this, SignIn.class);
+                    startActivity(intent);
+                    finish();//finishing it because splash screen should be shown only once
+                }
             }
-        }, 5000);
+        }, 1500);//for timer
     }
     }

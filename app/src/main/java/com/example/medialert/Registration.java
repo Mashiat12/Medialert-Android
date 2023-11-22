@@ -38,7 +38,7 @@ public class Registration extends AppCompatActivity {
         {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Login.class);
+                Intent intent = new Intent(getApplicationContext(), SignIn.class);
                 startActivity(intent);
                 finish();
             }
@@ -68,7 +68,7 @@ public class Registration extends AppCompatActivity {
                                if (task.isSuccessful()) {
                                    Toast.makeText(Registration.this, "Account created.",
                                            Toast.LENGTH_SHORT).show();
-                                   Intent intent = new Intent(getApplicationContext(), Login.class);
+                                   Intent intent = new Intent(getApplicationContext(), SignIn.class);
                                    startActivity(intent);
                                    finish();
 
