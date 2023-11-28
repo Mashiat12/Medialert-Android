@@ -40,7 +40,7 @@ public class addmedicin extends AppCompatActivity {
 
                 // Validate data
                 if (medicineName.isEmpty() || dosage.isEmpty() || frequency.isEmpty()) {
-                    Toast.makeText(MainActivity.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(addmedicin.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
                     return;
                 }
 

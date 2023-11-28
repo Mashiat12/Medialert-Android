@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".HomeActivity">
+    tools:context=".HomeActivity"
+    android:id="@+id/container">
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/material_dynamic_neutral90"
         android:orientation="vertical"
-        android:weightSum="10"
-        app:layout_constraintBaseline_toBaselineOf="parent">
+        android:weightSum="11"
+        android:background="@color/material_dynamic_neutral_variant80">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -20,10 +22,9 @@
             android:layout_weight="2">
 
             <TextView
-                android:layout_width="383dp"
-                android:layout_height="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="57dp"
                 android:layout_marginEnd="10dp"
@@ -33,270 +34,296 @@
                 android:textColor="@color/design_default_color_error"
                 android:textSize="35sp"
                 android:textStyle="bold" />
+            <!-- imageview-->
+
+
+
         </RelativeLayout>
-        
+
         <GridLayout
-            android:id="@+id/mainGrid"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="8"
             android:columnCount="2"
             android:rowCount="3"
-            android:alignmentMode="alignMargins"
+            android:layout_weight="8"
             android:columnOrderPreserved="false"
-            android:padding="15dp">
+            android:padding="14dp"
+            android:id="@+id/mainGrid"
+            >
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardlabtest"
+
+                android:clickable="true"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_gravity="fill"
                 app:cardBackgroundColor="#5BC7D5"
-                app:cardElevation="20dp"
-                app:cardCornerRadius="8dp">
-
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_margin="15dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_margin="16dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    >
 
                     <ImageView
-                        android:layout_width="134dp"
-                        android:layout_height="163dp"
+                        android:layout_width="108dp"
+                        android:layout_height="101dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/home" />
-
                     <TextView
-                        android:layout_width="111dp"
-                        android:layout_height="84dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/design_default_color_error"
                         android:text="labtest"
                         android:textAlignment="center"
-                        android:textColor="@color/design_default_color_error"
-                        android:textSize="25dp"
-                        android:textStyle="bold" />
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"/>
+
 
 
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
+            </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardHealth"
+
+                android:clickable="true"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_gravity="fill"
-                app:cardBackgroundColor="#7AB8B2"
-                app:cardElevation="20dp"
-                app:cardCornerRadius="8dp">
-
+                app:cardBackgroundColor="#73A8BF"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_margin="15dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_margin="16dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    >
 
                     <ImageView
-                        android:layout_width="128dp"
-                        android:layout_height="148dp"
+                        android:layout_width="109dp"
+                        android:layout_height="107dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/care" />
-
                     <TextView
-                        android:layout_width="113dp"
-                        android:layout_height="71dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Health"
                         android:textAlignment="center"
                         android:textColor="@color/design_default_color_error"
-                        android:textSize="25dp"
-                        android:textStyle="bold" />
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"/>
+
 
 
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
+            </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardAddMedicin"
+                android:clickable="true"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_gravity="fill"
-                app:cardBackgroundColor="#78B7BF"
-                app:cardElevation="20dp"
-                app:cardCornerRadius="8dp">
-
+                app:cardBackgroundColor="#5DA1AA"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_margin="15dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_margin="16dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    >
 
                     <ImageView
-                        android:layout_width="159dp"
-                        android:layout_height="142dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/pill" />
-
                     <TextView
-                        android:layout_width="156dp"
-                        android:layout_height="102dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="AddMedicin"
                         android:textAlignment="center"
                         android:textColor="@color/design_default_color_error"
-                        android:textSize="25dp"
-                        android:textStyle="bold" />
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"/>
+
 
 
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
+            </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardBuyMedicin"
+                android:clickable="true"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_gravity="fill"
                 app:cardBackgroundColor="#71C3CD"
-                app:cardElevation="20dp"
-                app:cardCornerRadius="8dp">
-
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_margin="15dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_margin="16dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    >
 
                     <ImageView
-                        android:layout_width="182dp"
-                        android:layout_height="180dp"
+                        android:layout_width="106dp"
+                        android:layout_height="110dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/buyy" />
-
                     <TextView
-                        android:layout_width="194dp"
-                        android:layout_height="87dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="BuyMedicin"
                         android:textAlignment="center"
                         android:textColor="@color/design_default_color_error"
-                        android:textSize="25dp"
-                        android:textStyle="bold" />
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"/>
+
 
 
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
+            </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardScanner"
+                android:clickable="true"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_gravity="fill"
                 app:cardBackgroundColor="#87BAC1"
-                app:cardElevation="20dp"
-                app:cardCornerRadius="8dp">
-
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_margin="15dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_margin="16dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    >
 
                     <ImageView
-                        android:layout_width="138dp"
-                        android:layout_height="144dp"
+                        android:layout_width="104dp"
+                        android:layout_height="96dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/scanner" />
-
                     <TextView
-                        android:layout_width="169dp"
-                        android:layout_height="89dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Scanner"
                         android:textAlignment="center"
                         android:textColor="@color/design_default_color_error"
-                        android:textSize="25dp"
-                        android:textStyle="bold" />
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"/>
+
 
 
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
+            </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardLogOut"
+                android:clickable="true"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_gravity="fill"
                 app:cardBackgroundColor="#54BFCD"
-                app:cardElevation="20dp"
-                app:cardCornerRadius="8dp">
-
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_margin="15dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_margin="16dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    >
 
                     <ImageView
-                        android:layout_width="151dp"
-                        android:layout_height="136dp"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/logout" />
-
                     <TextView
-                        android:layout_width="143dp"
-                        android:layout_height="101dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="LogOut"
                         android:textAlignment="center"
                         android:textColor="@color/design_default_color_error"
-                        android:textSize="25dp"
-                        android:textStyle="bold" />
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"/>
+
 
 
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
         </GridLayout>
+
+
+
+
+
+
+
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
 
 
 
+</FrameLayout>
