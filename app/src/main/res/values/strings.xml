@@ -7,4 +7,25 @@
     <string name='click_to_register'>click to register</string>
     <string name='registration'>Registration</string>
     <string name='click_to_login'>Click here to login</string>
+
+    <string name="health_article_content">
+        <![CDATA[
+
+Balanced Nutrition:
+A healthy diet is crucial for overall well-being. Consume a variety of fruits, vegetables, lean proteins,healthy fats.
+
+Regular Physical Activity:
+Engage in regular exercise to promote cardiovascular health, strengthen muscles, and maintain a healthy weight.
+
+Adequate Sleep:
+Prioritize quality sleep to support physical and mental health.
+
+Stress Management:
+Practice stress-reducing techniques such as meditation, deep breathing, yoga, or mindfulness.
+
+Healthy Relationships and Social Connections:
+Cultivate positive relationships with friends and family.
+        ]]>
+    </string>
 </resources>
+

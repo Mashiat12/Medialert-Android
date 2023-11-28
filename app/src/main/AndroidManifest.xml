@@ -11,10 +11,28 @@
         android:theme="@style/Theme.MediAlert"
         tools:targetApi="31">
         <activity
-            android:name=".SignIn"
+            android:name=".ReminderReceiver"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".logoutt"
+            android:exported="false" />
+        <activity
+            android:name=".scanner"
+            android:exported="false" />
+        <activity
+            android:name=".buymedicin"
+            android:exported="false" />
+        <activity
+            android:name=".addmedicin"
+            android:exported="false" />
+        <activity
+            android:name=".health"
+            android:exported="false" />
+        <activity
+            android:name=".labtest"
             android:exported="false" />
         <activity
             android:name=".Login"
@@ -25,6 +43,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
         <activity
             android:name=".SplashScreen"
             android:exported="true">

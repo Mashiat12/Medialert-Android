@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".health">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/articleImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="219dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/health_image" />
+
+                <TextView
+                    android:id="@+id/articleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="442dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/health_article_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Read more"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
